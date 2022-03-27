@@ -1,0 +1,118 @@
+.header {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  background-color: $lighterbrown;
+  box-shadow: 3px 8px 25px $black;
+  z-index: 100;
+  @media only screen and (max-width: $medium) {
+    background-color: inherit;
+    box-shadow: none;
+  }
+  .navbar {
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100rem;
+    .logo {
+      display: inline-block;
+      img {
+        height: 4rem;
+        width: auto;
+      }
+    }
+    .menu {
+      min-width: $small;
+      font-family: $raleway;
+      display: grid;
+      align-content: center;
+      height: 3rem;
+      padding: 0 1rem;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      position: relative;
+      top: 0;
+      right: 0;
+      width: auto;
+      background: none;
+      box-shadow: none;
+      @media only screen and (max-width: $medium) {
+        width: 100%;
+        height: 4rem;
+        left: 0;
+        bottom: 0;
+        position: fixed;
+        top: auto;
+        right: auto;
+        background-color: $lighterbrown;
+        box-shadow: 3px 8px 25px 15px $black;
+      }
+      .list {
+        min-width: $small;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .item {
+          &:hover{
+            color: $white;
+          }
+          .link{
+            display: inline-block;
+            &:hover{
+              color: $white;
+            }
+            .hidden{
+              display: none;
+              @media only screen and (max-width: $medium) {
+                display: block;
+                text-align: center;
+                padding: 3px;
+              }
+            }
+            i{
+              color: $nude;
+            }
+            .name {
+              display: inline-block;
+              color: $nude;
+              font-weight: 900;
+              padding: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.intro {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/Interior.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+}
+
+html {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}

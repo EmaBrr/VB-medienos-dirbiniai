@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  background-color: #785534;
+  box-shadow: 3px 8px 25px #25170a;
+  z-index: 100;
+}
+
+@media only screen and (max-width: 576px) {
+  .header {
+    background-color: inherit;
+    box-shadow: none;
+  }
+}
+
+.header .navbar {
+  width: 100%;
+  height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 100rem;
+}
+
+.header .navbar .logo {
+  display: inline-block;
+}
+
+.header .navbar .logo img {
+  height: 4rem;
+  width: auto;
+}
+
+.header .navbar .menu {
+  min-width: 360px;
+  font-family: "Raleway", sans-serif;
+  display: grid;
+  align-content: center;
+  height: 3rem;
+  padding: 0 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  position: relative;
+  top: 0;
+  right: 0;
+  width: auto;
+  background: none;
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 576px) {
+  .header .navbar .menu {
+    width: 100%;
+    height: 4rem;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    top: auto;
+    right: auto;
+    background-color: #785534;
+    box-shadow: 3px 8px 25px 15px #25170a;
+  }
+}
+
+.header .navbar .menu .list {
+  min-width: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header .navbar .menu .list .item:hover {
+  color: #f5e0ca;
+}
+
+.header .navbar .menu .list .item .link {
+  display: inline-block;
+}
+
+.header .navbar .menu .list .item .link:hover {
+  color: #f5e0ca;
+}
+
+.header .navbar .menu .list .item .link .hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 576px) {
+  .header .navbar .menu .list .item .link .hidden {
+    display: block;
+    text-align: center;
+    padding: 3px;
+  }
+}
+
+.header .navbar .menu .list .item .link i {
+  color: #e3ccb1;
+}
+
+.header .navbar .menu .list .item .link .name {
+  display: inline-block;
+  color: #e3ccb1;
+  font-weight: 900;
+  padding: 3px;
+}
+
+.intro {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/Interior.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+}
+
+html {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
