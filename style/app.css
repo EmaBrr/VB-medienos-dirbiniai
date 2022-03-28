@@ -205,6 +205,73 @@ h6 {
   background-color: black;
 }
 
+.intro .introwrapper {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+@media only screen and (max-width: 576px) {
+  .intro .introwrapper {
+    height: 100vh;
+    padding-right: 50px;
+  }
+}
+
+.intro .introwrapper .introtext {
+  width: 90%;
+  text-align: left;
+}
+
+@media only screen and (max-width: 576px) {
+  .intro .introwrapper .introtext {
+    width: 90%;
+  }
+}
+
+.intro .introwrapper .introtext h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #e3ccb1;
+}
+
+@media only screen and (max-width: 576px) {
+  .intro .introwrapper .introtext h2 {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+}
+
+.about {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4b2f16;
+  padding: 0px 20px;
+}
+
+.about .aboutwrapper {
+  max-width: 100rem;
+  width: 100%;
+}
+
+.about .aboutwrapper .aboutpart {
+  padding: 20px;
+  width: calc(100%/2);
+  float: left;
+}
+
+.about .aboutwrapper .aboutpart p {
+  font-family: "Raleway", sans-serif;
+  color: #e3ccb1;
+}
+
 html {
   box-sizing: inherit;
   scroll-behavior: smooth;
