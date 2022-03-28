@@ -41,14 +41,14 @@
       box-shadow: none;
       @media only screen and (max-width: $medium) {
         width: 100%;
-        height: 4rem;
+        height: 3.7rem;
         left: 0;
         bottom: 0;
         position: fixed;
         top: auto;
         right: auto;
         background-color: $lighterbrown;
-        box-shadow: 3px 8px 25px 15px $black;
+        box-shadow: 3px 8px 25px 10px $black;
       }
       .list {
         min-width: $small;
@@ -56,15 +56,14 @@
         align-items: center;
         justify-content: space-around;
         .item {
-          &:hover{
-            color: $white;
-          }
-          .link{
+          font-size: 0.8rem;
+          // border: 2px solid red;
+          .link {
             display: inline-block;
-            &:hover{
+            &:hover {
               color: $white;
             }
-            .hidden{
+            .hidden {
               display: none;
               @media only screen and (max-width: $medium) {
                 display: block;
@@ -72,7 +71,7 @@
                 padding: 3px;
               }
             }
-            i{
+            i {
               color: $nude;
             }
             .name {
